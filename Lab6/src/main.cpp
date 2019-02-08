@@ -31,7 +31,6 @@ int main() {
 
 
 	if (userFileChoice == 'y') {		//create linked list from file
-
 		while (!goodFile) {
 
 			std::cout << "Please enter the name of a file to read from: " << std::endl;
