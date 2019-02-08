@@ -1,3 +1,16 @@
+/*************************************************************
+*	Author: Martin Edmunds
+*	Email: edmundsm@oregonstate.edu
+*	Class: CS 162-400
+*	Date: 02/08/19
+*	Description: Linked List declaration file
+
+Manages a collection of nodes forming a linked-list.
+
+Consists mainly of a head node, a tail node and a single integer
+to keep track of the size of the list.
+**************************************************************/
+
 #include "LinkedList.hpp"
 
 /*

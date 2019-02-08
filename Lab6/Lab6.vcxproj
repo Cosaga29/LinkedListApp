@@ -23,7 +23,6 @@
     <ClCompile Include="src\LinkedList.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Menu.cpp" />
-    <ClCompile Include="src\Node.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\InputValidationFunctions.hpp" />
