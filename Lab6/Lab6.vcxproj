@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\InputValidationFunctions.cpp" />
+    <ClCompile Include="src\LinkedList.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Node.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\InputValidationFunctions.hpp" />
+    <ClInclude Include="src\LinkedList.hpp" />
+    <ClInclude Include="src\Menu.hpp" />
+    <ClInclude Include="src\Node.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{0F75EDA4-C20E-4CB3-BF01-6ED4E446DD65}</ProjectGuid>
@@ -114,8 +127,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
