@@ -34,6 +34,7 @@ int main() {
 		while (!goodFile) {
 
 			std::cout << "Please enter the name of a file to read from: " << std::endl;
+			clearInputStream();			//clear away '\n' character
 			std::getline(std::cin, fileName);
 			inputFile.open(fileName.c_str());
 
