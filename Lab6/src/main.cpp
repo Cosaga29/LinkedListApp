@@ -63,6 +63,8 @@ int main() {
 	userMenu.addPrompt("Delete from head");
 	userMenu.addPrompt("Delete from tail");
 	userMenu.addPrompt("Traverse the list reversely");
+	userMenu.addPrompt("Print the head of the list");
+	userMenu.addPrompt("Print the tail of the list");
 	userMenu.addPrompt("Exit");
 
 
@@ -98,8 +100,20 @@ int main() {
 			list->traverseListR();
 
 			break;
+
+		case 6:	//print the head of the list
+			userMenu.displayMessage("Printing head of list...");
+			list->printHeadValue();
+			
+			break;
+
+		case 7: //print the tail of the list
+			userMenu.displayMessage("Printing tail of list...");
+			list->printTailValue();
+
+			break;
 		
-		case 6:	//user has elected to exit
+		case 8:	//user has elected to exit
 			userMenu.displayMessage("Exiting...");
 			userExit = true;
 

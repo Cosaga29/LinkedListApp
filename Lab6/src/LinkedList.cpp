@@ -58,11 +58,15 @@ Steps through each node in the list and deletes the node
 LinkedList::~LinkedList()
 {
 	if (head != 0) {				//check if valid head
+
 		Node* next = head->next;	//set next node to head's next node
-		if (head != 0) {			
+
+		if (head != 0) {	
+
 			delete head;			//delete the current head
 			head = next;			//set new head to next head
 			next = head->next;		//get new next head
+
 		}
 	}
 }
@@ -104,7 +108,8 @@ Param
 void LinkedList::addNodeTail(int valueToAdd)
 {
 	Node* toAdd = new Node();
-	toAdd->val = valueToAdd;
+
+	toAdd->val = valueToAdd;	//init node value to value passed
 	toAdd->prev = 0;
 	toAdd->next = 0;
 
@@ -125,7 +130,7 @@ void LinkedList::addNodeTail(int valueToAdd)
 
 
 /*
-Function that delets the current head of the list, replacing it with a new head
+Function that deletes the current head of the list, replacing it with a new head
 */
 void LinkedList::deleteHead()
 {
