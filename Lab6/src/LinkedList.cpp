@@ -57,17 +57,10 @@ Steps through each node in the list and deletes the node
 */
 LinkedList::~LinkedList()
 {
-	if (head != 0) {				//check if valid head
-
-		Node* next = head->next;	//set next node to head's next node
-
-		if (head != 0) {	
-
-			delete head;			//delete the current head
-			head = next;			//set new head to next head
-			next = head->next;		//get new next head
-
-		}
+	while (head != 0) {				//check if valid head
+		Node* next = head->next;	//delete the current head
+		delete head;				//set new head to next head
+		head = next;				//get new next head
 	}
 }
 
